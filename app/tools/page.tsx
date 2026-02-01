@@ -31,6 +31,14 @@ const tools = [
     description: 'Your second brain. Note-taking, project management, and organization.',
   },
   {
+    name: 'Grammarly',
+    category: 'Writing',
+    rating: 4.7,
+    price: 'Free - $12/mo',
+    slug: 'grammarly-review',
+    description: 'Essential writing assistant and grammar checker.',
+  },
+  {
     name: 'Jasper AI',
     category: 'Marketing',
     rating: 4.6,
@@ -45,14 +53,6 @@ const tools = [
     price: 'Free - $49/mo',
     slug: 'copy-ai-review',
     description: 'Copywriting specialist with templates for everything.',
-  },
-  {
-    name: 'Grammarly',
-    category: 'Writing',
-    rating: 4.7,
-    price: 'Free - $12/mo',
-    slug: 'grammarly-review',
-    description: 'Writing assistant and grammar checker.',
   },
 ]
 
