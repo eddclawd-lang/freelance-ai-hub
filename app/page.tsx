@@ -2,32 +2,38 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <main className="min-h-screen">
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Best AI Tools for <span className="text-blue-600">Freelancers</span> in 2026
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Discover AI-powered tools that actually save you time and make you money. 
-            Tested by freelancers, for freelancers.
-          </p>
-          <div className="flex gap-4 justify-center">
-            <Link 
-              href="/tools" 
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-            >
-              Browse All Tools
-            </Link>
-            <Link 
-              href="/guides" 
-              className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
-            >
-              Read Guides
-            </Link>
+      <div className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500">
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-semibold">
+              ⚡ 50,000+ freelancers trust our reviews
+            </div>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+              AI Tools That Actually <span className="text-yellow-300">Make You Money</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed">
+              No BS reviews. Real testing. Freelancer-focused. We help you pick the right AI tools to 10x your productivity.
+            </p>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <Link 
+                href="/tools" 
+                className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
+              >
+                🚀 Browse All Tools
+              </Link>
+              <Link 
+                href="/comparisons/chatgpt-vs-claude" 
+                className="bg-white/10 backdrop-blur-sm text-white border-2 border-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition"
+              >
+                Compare Tools
+              </Link>
+            </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </div>
 
       {/* Featured Tools */}
