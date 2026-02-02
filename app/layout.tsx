@@ -14,21 +14,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <nav className="bg-white border-b border-gray-200">
+        <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
           <div className="container mx-auto px-4 py-4">
             <div className="flex justify-between items-center">
-              <a href="/" className="text-2xl font-bold text-blue-600">
+              <a href="/" className="text-xl md:text-2xl font-bold text-blue-600">
                 FreelanceAI Hub
               </a>
-              <div className="flex gap-6">
+              <div className="flex gap-3 md:gap-6 text-sm md:text-base">
                 <a href="/tools" className="text-gray-700 hover:text-blue-600 font-medium">
                   Tools
                 </a>
-                <a href="/categories" className="text-gray-700 hover:text-blue-600 font-medium">
+                <a href="/categories/writers" className="text-gray-700 hover:text-blue-600 font-medium hidden md:block">
                   Categories
                 </a>
-                <a href="/guides" className="text-gray-700 hover:text-blue-600 font-medium">
-                  Guides
+                <a href="/comparisons/chatgpt-vs-claude" className="text-gray-700 hover:text-blue-600 font-medium hidden sm:block">
+                  Compare
                 </a>
                 <a href="/about" className="text-gray-700 hover:text-blue-600 font-medium">
                   About
