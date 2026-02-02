@@ -54,6 +54,22 @@ const tools = [
     slug: 'copy-ai-review',
     description: 'Copywriting specialist with templates for everything.',
   },
+  {
+    name: 'Midjourney',
+    category: 'Design',
+    rating: 4.8,
+    price: '$10 - $60/mo',
+    slug: 'midjourney-review',
+    description: 'AI image generation for designers. Create stunning visuals from text.',
+  },
+  {
+    name: 'GitHub Copilot',
+    category: 'Development',
+    rating: 4.8,
+    price: '$10/mo',
+    slug: 'github-copilot-review',
+    description: 'AI pair programmer. Code suggestions right in your IDE.',
+  },
 ]
 
 export default function ToolsDirectory() {
