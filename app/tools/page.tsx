@@ -58,10 +58,18 @@ export default function ToolsDirectory() {
     {
       name: 'Midjourney',
       category: 'design',
-      rating: 4.8,
+      rating: 4.9,
       price: '$10 - $60/mo',
-      slug: 'midjourney-review',
-      description: 'AI image generation for designers. Create stunning visuals from text.',
+      slug: 'midjourney-for-freelancers',
+      description: 'Best-in-class AI art generation. Create stunning visuals clients actually pay for.',
+    },
+    {
+      name: 'Canva AI',
+      category: 'design',
+      rating: 4.8,
+      price: 'Free - $13/mo',
+      slug: 'canva-ai-for-freelancers',
+      description: 'Design like a pro without being one. AI-powered templates and tools.',
     },
     {
       name: 'GitHub Copilot',
