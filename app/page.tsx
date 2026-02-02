@@ -2,38 +2,44 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500">
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-semibold">
-              ⚡ 50,000+ freelancers trust our reviews
+      <div className="relative overflow-hidden border-b border-gray-800">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-pink-600/10"></div>
+        <div className="container mx-auto px-4 py-24 md:py-40 relative z-10">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="inline-block mb-6 px-6 py-2 bg-white/5 backdrop-blur-sm rounded-full text-gray-300 text-sm font-semibold border border-white/10">
+              ⚡ Trusted by 50,000+ freelancers
             </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
-              AI Tools That Actually <span className="text-yellow-300">Make You Money</span>
+            <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+                AI Tools That Actually
+              </span>
+              <br/>
+              <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
+                Make You Money
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto">
               No BS reviews. Real testing. Freelancer-focused. We help you pick the right AI tools to 10x your productivity.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Link 
                 href="/tools" 
-                className="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
+                className="group bg-white text-black px-10 py-5 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-2xl shadow-white/20 flex items-center gap-3"
               >
                 🚀 Browse All Tools
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
               </Link>
               <Link 
                 href="/comparisons/chatgpt-vs-claude" 
-                className="bg-white/10 backdrop-blur-sm text-white border-2 border-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition"
+                className="bg-white/5 backdrop-blur-sm text-white border-2 border-white/20 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 hover:border-white/40 transition-all"
               >
                 Compare Tools
               </Link>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </div>
 
       {/* Featured Tools */}
