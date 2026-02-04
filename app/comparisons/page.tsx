@@ -28,6 +28,12 @@ export default function ComparisonsPage() {
             <p className="text-gray-600 mb-4">Comparing two popular AI copywriting tools for freelance marketers.</p>
             <span className="text-blue-600 font-semibold">Read Comparison →</span>
           </Link>
+
+          <Link href="/comparisons/canva-vs-adobe-express" className="block bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-blue-600 hover:shadow-lg transition">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Canva vs Adobe Express</h2>
+            <p className="text-gray-600 mb-4">Which design tool gives freelancers the best ROI? Features, pricing, and real workflows compared.</p>
+            <span className="text-blue-600 font-semibold">Read Comparison →</span>
+          </Link>
         </div>
       </div>
     </main>
