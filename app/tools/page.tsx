@@ -72,6 +72,14 @@ export default function ToolsDirectory() {
       description: 'Design like a pro without being one. AI-powered templates and tools.',
     },
     {
+      name: 'Descript',
+      category: 'productivity',
+      rating: 4.9,
+      price: 'Free - $24/mo',
+      slug: 'descript-for-freelancers',
+      description: 'Edit video & podcasts like a Word document. Save 50-70% editing time.',
+    },
+    {
       name: 'GitHub Copilot',
       category: 'development',
       rating: 4.8,
